@@ -1,0 +1,203 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>
+        A Föld sivatagai
+    </title>
+
+
+    <link rel="stylesheet" type="text/css" href="../asset/css/base.css">
+    <link rel="stylesheet" type="text/css" href="../asset/css/menu.css">
+    <link rel="stylesheet" type="text/css" href="../asset/css/images.css">
+    <link rel="stylesheet" type="text/css" href="../asset/css/table.css">
+
+    <script>
+
+        var deserts = [
+            { "name": "Rub' al Háli", "size": 800000 },
+            { "name": "Kalahári", "size": 518000 },
+            { "name": "Nagy-homoksivatag", "size": 420000 },
+            { "name": "Takla-Makán", "size": 400000 },
+            { "name": "Szír-sivatag", "size": 350000 },
+            { "name": "Nagy-Viktória-sivatag", "size": 330000 },
+            { "name": "Kara-kum", "size": 300000 },
+            { "name": "Núbiai-sivatag", "size": 250000 },
+            { "name": "Kizil-kum", "size": 240000 },
+            { "name": "Gibson-sivatag", "size": 220000 },
+            { "name": "Simpson-sivatag", "size": 200000 }
+        ]
+
+
+        function generate() {
+            var html = '<table>';
+
+            html += '<tr><td align="center">Sivatag</td><td align="center">Területe</td></tr>';
+            for (var i = 0; i < deserts.length; i++) {
+                html += '<tr><td>' + deserts[i].name + '</td>';
+                html += '<td>' + deserts[i].size + '</td>';
+                html += '</tr>';
+            }
+
+            html += '</table>';
+            html += '<input type="button" value="A területek összege" onclick="areaSum()" />';
+
+            var where = document.getElementById("deserts");
+
+            where.innerHTML = html;
+        }
+
+        function areaSum() {
+            var areaSum = 0;
+
+            for (var i = 0; i < deserts.length; i++) {
+                areaSum += deserts[i].size;
+            }
+
+            var popup = alert("A sivatagok területeinek összege: " + areaSum);
+        }
+
+    </script>
+
+</head>
+
+<body>
+    <br />
+    <h1 align="center"> Néhány érdekesség a Föld sivatagairól</h1>
+
+    <div id="menu">
+        <ul>
+            <li><a href="deserts.html">Főoldal</a></li>
+            <li><a href="Szahara.html">Szahara</a></li>
+            <li><a href="Gobi.html">Góbi</a></li>
+            <li><a href="Thar.html">Thár-sivatgat</a></li>
+        </ul>
+    </div>
+
+    <p>
+        A sivatag olyan terület, amelynek vízháztartása állandóan veszteséges. Az ilyen helyeken az éves csapadék
+        általában nem éri el a 250 mm-t. Vannak olyan helyek, ahol évekig nem esik az eső. A szárazság miatt a talaj
+        terméketlen, többnyire csak a kimondottan szárazságtűrő és pozsgás fajok élnek meg itt. Maga a talaj azonban
+        éppen olyan változatos lehet, mint a termékeny tájakon, és eszerint a sivatag lehet:
+        <ul>
+            <li>sziklasivatag</li>
+            <li>kősivatag</li>
+            <li>kavicssivatag</li>
+            <li>homoksivatag</li>
+            <li>agyagsivatag</li>
+            <li>sósivatag</li>
+        </ul>
+        A sivatagok felszínét főként az aprózódás és a mállás, valamint a szél és az időszakos vízfolyások alakítják. A
+        hőmérséklet szélsőséges ingadozása aprózza a kőzeteket. A szél sok homokot és port ragad fel, és a keményebb
+        szemcsék dörzsölik, csiszolják a kőzetek felszínét. A finom anyag elszállítása után deflációs medencék maradnak
+        vissza kavicsos-kőtömbös maradéktakaróval.
+        <br />
+        <br />
+        A ritkán és rövid ideig, de intenzíven hulló eső hirtelen árvizet okoz. A víz lepelszerűen vagy záporpatakokba
+        gyűlve folyik le az időszakos völgyekben. A rohanó ár sok iszapot, homokot és kőzettörmeléket sodor magával a
+        medencékbe, de csak rövid távon, mert a víz hamar beszivárog vagy elpárolog. A medencék befelé irányuló
+        vízhálózata elősegíti a pedimentek (hegylábfelszínek) képződését. Utóbbiak hegység felőli sávjában általában a
+        szálban álló kőzet elegyengetett felszínét, a medence felőlin pedig egymásba olvadó, hullámos hordalékkúpok
+        sorozatát találjuk.
+        <br />
+        <br />
+        A váztalajok tulajdonságait az alapkőzet fajtája határozza meg. A hőmérséklet nappal magas, éjjel viszont
+        erősen leesik, mert a gyér növényzet miatt a száraz levegőben (a relatív páratartalom 20–25%) erős a
+        kisugárzás. A sivatag távolról sem mindig síkság: gyakorta hegyes-völgyes. A gyenge bioproduktivitás miatt a
+        sivatagok
+        gyéren lakottak. Az emberek többnyire csak az oázisoknál telepszenek meg.
+        <br />
+        <br />
+        A sivatagoknak két fő típusa van:
+        <ul>
+            <li>a zonális sivatag, amely a térítők közelében alakult ki, és</li>
+            <li>a kontinentális sivatag, amely a szárazföld belsejében, hegyláncok árnyékában alakult ki főn hatására.
+            </li>
+        </ul>
+
+        A zonális sivatagok a trópusokat két oldalról határoló nagy nyomású, leszálló légáramlásos zónában, a 15–30°
+        szélességi körök között alakulnak ki. A forró, száraz térítő menti öv a passzátszelek leszálló, nagy nyomású
+        övezetébe esik, ahol nagy a felmelegedő levegő víztartó képessége. A víz nem csapódik ki, a párolgás pedig
+        különlegesen erős; e két tényező hatására a felszín kiszárad, főként a szárazföldek nyugati felén. Ilyen:
+
+        <ul>
+            <li>Észak-Afrikában a Szahara</li>
+            <li>Délnyugat-Afrikában a Namib-sivatag és a Kalahári-sivatag</li>
+            <li>Ázsiában az Arab-félsziget sivatagjai, Irán és Beludzsisztán belseje, a Tharr-sivatag, és a Góbi</li>
+            <li>Ausztráliában a Nagy-Viktória-sivatag és a Nagy-homoksivatag</li>
+            <li>Észak-Amerikában a Yuma-, Mojave- és Gila-sivatag, valamint a Mexikói-medence egy része</li>
+            <li>Dél-Amerikában Peru és Észak-Chile partvidékének nagy része, benne az Atacama-sivatag</li>
+        </ul>
+        Félsivatagnak nevezzük a sivatag és a szavanna közötti átmeneti zónát, melynek szélessége az akár több száz
+        kilométert is elérheti.
+    </p>
+
+    <table border="5" align=center>
+        <tr>
+            <td><img id="pictures" src="../asset/img/sahara.jpg" title="Területe: 9 400 000 km2" /></td>
+            <td>
+                <ul>
+                    <p align=center>Szahara</p>
+                    <li>Algéria</li>
+                    <li>Csád</li>
+                    <li>Egyiptom</li>
+                    <li>Eritrea</li>
+                    <li>Líbia</li>
+                    <li>Mali</li>
+                    <li>Mauritánia</li>
+                    <li>Marokkó</li>
+                    <li>Niger</li>
+                    <li>Nyugat-Szahara</li>
+                    <li>Szudán</li>
+                    <li>Tunézia</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p align=center>Góbi-sivatag</p>
+                <ul>
+                    <li>Kína</li>
+                    <li>Mongólia</li>
+                </ul>
+            </td>
+            <td><img id="pictures" src="../asset/img/gobi.jpg" title="Területe: 1 295 000 km2" /></td>
+        </tr>
+        <tr>
+            <td><img id="pictures" src="../asset/img/thar.jpg" title="Területe: 250 000 km2" /></td>
+            <td>
+                <p align=center>Thár-sivatag</p>
+                <ul>
+                    <li>India</li>
+                    <li>Pakisztán</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+    <br />
+    <br />
+
+    <script>
+        function bigButton(x) {
+            x.style.height = "30px";
+            x.style.width = "256px";
+        }
+
+        function normalButton(x) {
+            x.style.height = "20px";
+            x.style.width = "180px";
+        }
+    </script>
+
+    <input type="button" value="A Föld további sivatagai" onclick="generate()" onmouseover="bigButton(this)"
+        onmouseout="normalButton(this)" />
+
+    <div id="deserts"></div>
+
+    <div id="areas"></div>
+
+
+</body>
+
+</html>

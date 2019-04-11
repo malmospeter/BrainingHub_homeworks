@@ -1,0 +1,13 @@
+#tableform table, th, td{
+    border: 1px;
+    border-style: solid;
+    width: 400px;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+tr:hover {
+    background-color:aqua;
+    opacity: 0.90;
+}
